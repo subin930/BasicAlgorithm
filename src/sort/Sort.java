@@ -40,5 +40,17 @@ public class Sort {
         System.out.print("quick sort: ");
         Arrays.stream(result5).forEach(x -> System.out.print(x + " "));
         System.out.println();
+
+
+        //힙 정렬
+        int[] result6 = HeapSort.heapSortAsc(Arrays.copyOfRange(arr, 0, arr.length));
+        System.out.print("heap sort ascending: ");
+        Arrays.stream(result6).forEach(x -> System.out.print(x + " "));
+        System.out.println();
+
+        int[] result7 = HeapSort.heapSortDesc(Arrays.copyOfRange(arr, 0, arr.length));
+        System.out.print("heap sort descending: ");
+        Arrays.stream(result7).forEach(x -> System.out.print(x + " "));
+        System.out.println();
     }
 }
