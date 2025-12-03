@@ -34,5 +34,11 @@ public class Sort {
         System.out.print("merge sort: ");
         Arrays.stream(result4).forEach(x -> System.out.print(x + " "));
         System.out.println();
+
+        //퀵 정렬
+        int[] result5 = QuickSort.quickSort(Arrays.copyOfRange(arr, 0, arr.length));
+        System.out.print("quick sort: ");
+        Arrays.stream(result5).forEach(x -> System.out.print(x + " "));
+        System.out.println();
     }
 }
